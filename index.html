@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimbrad's restaurant</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para o script JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="container">
+            <!-- Logo do restaurante -->
+            <img src="./assets/Restaurant Logo.jpeg" alt="Logo do Kimbrad's restaurant" id="logo">
+            <!-- Menu com as opções de idioma e botão do leitor de página -->
+            <nav id="language-menu">
+                <ul>
+                    <li><a href="#" data-lang="pt-BR">Português</a></li>
+                    <li><a href="#" data-lang="en">English</a></li>
+                    <li><a href="#" data-lang="es">Español</a></li>
+                    <li><button id="activate-reader">Ativar Leitor de Página</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Cardápio do restaurante -->
+    <main id="menu">
+        <div class="container">
+            <!-- Título do cardápio -->
+            <h1 id="menu-title" data-translation="Cardápio">Cardápio</h1>
+            <!-- Seção de pratos franceses -->
+            <section id="french-dishes">
+                <h2 id="french-dishes-title" data-translation="Pratos franceses">Pratos franceses</h2>
+                <!-- Lista de pratos franceses -->
+                <ul class="dish-list">
+                    <!-- Primeiro prato francês -->
+                    <li class="dish-item">
+                        <img src="./assets/Boeuf bourguignon.jpeg" alt="Foto do Bife Bourguignon" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Boeuf bourguignon</h3>
+                            <p class="dish-price">R$ 45,00</p>
+                            <p class="dish-description" data-dish="french-dish-1" data-translation="french-dish-1">Um ensopado de carne bovina cozida lentamente em vinho tinto, com cenoura, cebola, cogumelos e bacon.</p>
+                        </div>
+                    </li>
+                    <!-- Segundo prato francês -->
+                    <li class="dish-item">
+                        <img src="./assets/Quiche Lorraine.jpeg" alt="Foto da Quiche" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Quiche Lorraine</h3>
+                            <p class="dish-price">R$ 25,00</p>
+                            <p class="dish-description" data-dish="french-dish-2" data-translation="french-dish-2">Uma torta salgada de massa quebrada recheada com ovos, creme de leite, queijo e bacon.</p>
+                        </div>
+                    </li>
+                    <!-- Terceiro prato francês -->
+                    <li class="dish-item">
+                        <img src="./assets/Ratatouille.jpeg" alt="Foto do Ratatouille" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Ratatouille</h3>
+                            <p class="dish-price">R$ 30,00</p>
+                            <p class="dish-description" data-dish="french-dish-3" data-translation="french-dish-3">Um prato vegetariano de legumes assados no forno, como berinjela, abobrinha, tomate, cebola e alho.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Seção de pratos brasileiros -->
+            <section id="brazilian-dishes">
+                <h2 id="brazilian-dishes-title" data-translation="Pratos brasileiros">Pratos brasileiros</h2>
+                <!-- Lista de pratos brasileiros -->
+                <ul class="dish-list">
+                    <!-- Primeiro prato brasileiro -->
+                    <li class="dish-item">
+                        <img src="./assets/Feijoada.jpeg" alt="Foto da Feijoada" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Feijoada</h3>
+                            <p class="dish-price">R$ 35,00</p>
+                            <p class="dish-description" data-dish="brazilian-dishe-1" data-translation="brazilian-dishe-1">Um cozido de feijão preto com carne de porco e linguiça, acompanhado de arroz, couve refogada, farofa e laranja.</p>
+                        </div>
+                    </li>
+
+                    <!-- Segundo prato brasileiro -->
+                    <li class="dish-item">
+                        <img src="./assets/Moqueca.jpeg" alt="Foto da Moqueca" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Moqueca</h3>
+                            <p class="dish-price">R$ 40,00</p>
+                            <p class="dish-description" data-dish="brazilian-dishe-2" data-translation="brazilian-dishe-2">Um ensopado de peixe e camarão com leite de coco, azeite de dendê, tomate, cebola e coentro.</p>
+                        </div>
+                    </li>
+
+                    <!-- Terceiro prato brasileiro -->
+                    <li class="dish-item">
+                        <img src="./assets/Pão de queijo.jpeg" alt="Foto do pão de queijo mineiro" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Pão de queijo</h3>
+                            <p class="dish-price">R$ 15,00</p>
+                            <p class="dish-description" data-dish="brazilian-dishe-3" data-translation="brazilian-dishe-3">Um pãozinho feito com polvilho e queijo, macio por dentro e crocante por fora.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Seção de pizzas -->
+            <section id="pizzas">
+                <h2 id="pizzas-title" data-translation="Pizzas">Pizzas</h2>
+                <!-- Lista de pizzas -->
+                <ul class="dish-list">
+                    <!-- Primeira pizza -->
+                    <li class="dish-item">
+                        <img src="./assets/Pizza de calabresa.jpeg" alt="Foto da pizza de calabresa" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Pizza de calabresa</h3>
+                            <p class="dish-price">R$ 30,00</p>
+                            <p class="dish-description" data-dish="pizza-1" data-translation="pizza-1">Uma pizza de massa fina coberta com molho de tomate, queijo mussarela e fatias de linguiça calabresa.</p>
+                        </div>
+                    </li>
+
+                    <!-- Segunda pizza -->
+                    <li class="dish-item">
+                        <img src="./assets/Pizza de frango com catupiry.jpeg" alt="Foto da pizza de frango com catupiry" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Pizza de frango com catupiry</h3>
+                            <p class="dish-price">R$ 35,00</p>
+                            <p class="dish-description" data-dish="pizza-2" data-translation="pizza-2">Uma pizza de massa fina coberta com molho de tomate, queijo mussarela, frango desfiado e catupiry.</p>
+                        </div>
+                    </li>
+
+                    <!-- Terceira pizza -->
+                    <li class="dish-item">
+                        <img src="./assets/Pizza de quatro queijos.jpeg" alt="Foto da pizza de quatro queijos" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-name">Pizza de quatro queijos</h3>
+                            <p class="dish-price">R$ 40,00</p>
+                            <p class="dish-description" data-dish="pizza-3" data-translation="pizza-3">Uma pizza de massa fina coberta com molho de tomate, queijo mussarela, queijo gorgonzola, queijo provolone e queijo parmesão.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Seção de bebidas -->
+            <section id="drinks">
+                <h2 id="drinks-title" data-translation="Bebidas">Bebidas</h2>
+                <!-- Lista de bebidas -->
+                <ul class="drink-list">
+                    <!-- Primeira bebida -->
+                    <li class="drink-item">
+                        <img src="./assets/Vinho tinto.jpeg" alt="Foto de vinho tinto" class="drink-image">
+                        <div class="drink-info">
+                            <h3 class="drink-name">Vinho tinto</h3>
+                            <p class="drink-price">R$ 50,00</p>
+                            <p class="drink-description" data-drink="drink-1" data-translation="drink-1">Uma garrafa de vinho tinto seco da região da Borgonha, na França.</p>
+                        </div>
+                    </li>
+
+                    <!-- Segunda bebida -->
+                    <li class="drink-item">
+                        <img src="./assets/Suco de laranja.jpeg" alt="Foto do suco de laranja" class="drink-image">
+                        <div class="drink-info">
+                            <h3 class="drink-name">Suco de laranja</h3>
+                            <p class="drink-price">R$ 10,00</p>
+                            <p class="drink-description" data-drink="drink-2" data-translation="drink-2">Um copo de suco de laranja natural e gelado.</p>
+                        </div>
+                    </li>
+
+                    <!-- Terceira bebida -->
+                    <li class="drink-item">
+                        <img src="./assets/Refrigerante.jpeg" alt="Foto de um Guaraná Antarctica" class="drink-image">
+                        <div class="drink-info">
+                            <h3 class="drink-name">Refrigerante</h3>
+                            <p class="drink-price">R$ 8,00</p>
+                            <p class="drink-description" data-drink="drink-3" data-translation="drink-3">Uma lata de refrigerante de cola, guaraná ou limão.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <!-- Rodapé do site -->
+    <footer>
+        <div class="container">
+            <!-- Informações de contato e redes sociais do restaurante -->
+            <p id="contact-info">Endereço: Vila Mariana, São Paulo, Rua Afonso Celso, 1195<br>Telefone: (11) 95795-0143<br>E-mail: kimbrad@restaurant.com.br<br>Facebook: @kimbradrestaurant<br>Instagram: @kimbradrestaurant<br>Twitter: @kimbradrestaurant</p>
+        </div>
+    </footer>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=JkwYvh8M"></script>
+</body>
+</html>
